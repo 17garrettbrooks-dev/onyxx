@@ -31,7 +31,19 @@ form.addEventListener("submit", async (event) => {
 		errorCode.textContent = err.toString();
 		throw err;
 	}
+<script>
+function cloakTab(title, iconUrl) {
+    // Change the browser tab title
+    document.title = title;
 
+    // Change or create the favicon dynamically
+    let link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+    link.type = 'image/x-icon';
+    link.rel = 'shortcut icon';
+    link.href = iconUrl;
+    document.getElementsByTagName('head')[0].appendChild(link);
+}
+</script>
 	const url = search(address.value, searchEngine.value);
 
 	let frame = document.getElementById("uv-frame");
