@@ -26,3 +26,7 @@ async function registerSW() {
 
 	await navigator.serviceWorker.register(stockSW);
 }
+// Automatically execute registration when the script loads
+registerSW().catch((err) => {
+    console.error("Failed to register service worker:", err);
+});
