@@ -8,9 +8,12 @@
 		/>
 		<title>ONYX</title>
 		<style>
-			/* Applies a clean monospace font to your project */
+			/* Monospace font & centering adjustments */
 			body, h1, input, title {
 				font-family: 'Courier New', Courier, monospace;
+			}
+			.desc {
+				text-align: center;
 			}
 		</style>
 		<meta
@@ -36,10 +39,10 @@
 			title="ONYX Logo"
 			class="flex-center logo-wrapper header-center"
 		>
-			<img class="logo" src="uv.png" alt="ONYX" />
+			<!-- Logo image removed here -->
 			<h1>ONYX</h1>
 		</div>
-		<div class="flex-center desc left-margin">
+		<div class="flex-center desc">
 			<p>search is below, have fun :3</p>
 		</div>
 
@@ -51,7 +54,7 @@
 			/>
 			<input id="uv-address" type="text" placeholder="Search the web freely" />
 		</form>
-		<div class="desc left-margin">
+		<div class="desc" style="text-align: center;">
 			<p id="uv-error"></p>
 			<pre id="uv-error-code"></pre>
 		</div>
